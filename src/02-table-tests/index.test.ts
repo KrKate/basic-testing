@@ -28,7 +28,7 @@ const testCases = [
 describe('simpleCalculator', () => {
   // This test case is just to run this test suite, remove it when you write your own tests
   test.each(testCases)(
-    `should return '$expected' when a = '$a' b = '$b' action = '$action'`,
+    `should return $expected when a = $a b = $b action = $action`,
     (testCondition) => {
       const { a, b, action, expected } = testCondition;
       expect(simpleCalculator({ a, b, action })).toBe(expected);
